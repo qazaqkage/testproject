@@ -1,7 +1,7 @@
 import pytest
 from complex_functions import square, exponent, floor_div
 
-@pytest.mark.parametrize("a, expected", [(2, 4), (4, 16), (5, 25)])
+@pytest.mark.parametrize("a, expected", [(4, 2), (16, 4), (25, 5)])
 def test_square(a, expected):
     assert expected == square(a)
 
